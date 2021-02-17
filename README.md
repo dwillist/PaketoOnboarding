@@ -34,9 +34,9 @@ For this task you will need a couple additional pieces of software
 - [paketo-buildpacks/node-engine repository](https://github.com/paketo-buildpacks/node-engine)
     - this can be clone by running
     ```git clone https://github.com/paketo-buildpacks/node-engine```
-- [paketo-buildpacks/npm repository](https://github.com/paketo-buildpacks/npm)
+- [paketo-buildpacks/node-start repository](https://github.com/paketo-buildpacks/node-start)
     - this can be clone by running
-    ```git clone https://github.com/paketo-buildpacks/npm```
+    ```git clone https://github.com/paketo-buildpacks/node-start```
 
 ## Packaging a Buildpack
 
@@ -45,17 +45,16 @@ Ok, this is the first task where we will ask you the reader to complete a task, 
 ## Packaging a Buildpack
 
 For this task we would like you to do the following,
- 1) package the `node-engine` and `npm` buildpacks from source into both `buildpackages` and `buildpacks` (should be a single command)
+ 1) package the `node-engine` and `node-start` buildpacks from source into both `buildpackages` and `buildpacks` (should be a single command)
 
- 2) run a successful `pack build` of the `sample_application` using the `node-engine` and `npm` **buildpack archives** that you packaged in step 1.
+ 2) run a successful `pack build` of the `sample_application` using the `node-engine` and `node-start` **buildpack archives** that you packaged in step 1.
 
- 3) run a successful `pack build` of the `sample_application` using the `node-engine` and `npm` **buildpackage images** that you packaged in step 1.
+ 3) run a successful `pack build` of the `sample_application` using the `node-engine` and `node-start` **buildpackage images** that you packaged in step 1.
 
 Hints:
 -
-- there is a script in both the `node-engine` and `npm` repos called `package.sh`, you should probably use this
+- there is a script in both the `node-engine` and `node-start` repos called `package.sh`, you should probably use this
 - Recall order of buildpacks matter when running `pack build`
-- If you are truly stuck, there is a secondary branch in this repo named `packaging_a_buildpack_solution`, the `README.md` file in this repo will contain a process to get these files
 
 Extra:
 -
