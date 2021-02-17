@@ -64,14 +64,14 @@ Once you have installed the above prerequisites and started the docker daemon. W
 list all recommended builders:
 
 ```
-pack list-trusted-builders
+pack config trusted-builders
 ```
 
 For this tutorial we are going to use the `gcr.io/paketo-buildpacks/builder:base` builder.
 To set this as the default we run
 
 ```
-pack set-default-builder gcr.io/paketo-buildpacks/builder:base
+pack config default-builder gcr.io/paketo-buildpacks/builder:base
 ```
 
 Ok great! Now from the root of the `sample_application` repository:
@@ -99,7 +99,7 @@ pack build metabuildpack-build-test --buildpack gcr.io/paketo-buildpacks/nodejs
 
 ## Using implementation buildpackages
 
-And finally we can un-group the **metabuildpackages** used in the above `pack build` build and use the **implementation buildpacages** directly.
+And finally we can un-group the **metabuildpackages** used in the above `pack build` build and use the **implementation buildpackages** directly.
 
 Note: ordering of the implementation buildpackages matters
 ```
