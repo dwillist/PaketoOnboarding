@@ -47,5 +47,4 @@ For this task we would like you to do the following,
 Hints:
 -
 - there is a script in the `nodejs` repo called `package.sh`, try using it.
-- Again if stuck check out the branch named `packaging_a_metabuildpack_solution`
 
