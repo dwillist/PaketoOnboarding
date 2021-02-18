@@ -101,14 +101,12 @@ This file has contents similar to the following.
 
 For this task we would like you to do the following,
 
-1) Create a `metabuildpack.tgz` archive that references the `node-engine` and `npm` implementation buildpacks.
-2) Create a `package.toml` file that uses the `metabuildpackage.tgz` created in step 1, and the `node-engine` and `npm` buildpackages.
-3) Create a custom metabuildpackage using the `pack package-buildpack` command with the `package.toml` created in step 2 
-4) Run a successful `pack build` of the `sample_application` using the metabuildpackage created in step 3.
+1) Create a `metabuildpack.tgz` archive that references the `node-engine` and `node-start` implementation buildpacks.
+2) Create a custom metabuildpackage using the `pack package-buildpack` command with the `package.toml` created in step 1 
+3) Run a successful `pack build` of the `sample_application` using the metabuildpackage created in step 3.
 
 Hints:
 -
 - check out the current `nodejs metabuildpack` [`package.toml` file](https://github.com/paketo-buildpacks/nodejs/blob/master/package.toml)
--  check out the current `nodejs` metabuildpack [`buildpack.toml` file](https://github.com/paketo-buildpacks/nodejs/blob/master/buildpack.toml)
--  Again if really stuck check out the branch named `creating_a_metabuildpack_solution` for a walk through.
+- check out the current `nodejs` metabuildpack [`buildpack.toml` file](https://github.com/paketo-buildpacks/nodejs/blob/master/buildpack.toml)
 
